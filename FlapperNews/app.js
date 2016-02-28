@@ -38,6 +38,7 @@ function($scope, posts){
 
 $scope.addPost = function(){ //function to add posts
   if(!$scope.title || $scope.title === '') { return; } //doesn't allow blanks
+  
   $scope.posts.push({
   title: $scope.title,
   link: $scope.link,
